@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Details | Clarity - Tailwind CSS Template for Blog</title>
+  </head>
+
+  <body
+    x-data="{ page: 'blog-single', 'loaded': true, 'modalNewsletter': false, 'modalSearch': false, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+  >
+    <!-- ===== Preloader Start ===== -->
+    <include src="./partials/preloader.html"></include>
+    <!-- ===== Preloader End ===== -->
+
+    <!-- ===== Header Start ===== -->
+    <include src="./partials/header.html" />
+    <!-- ===== Header End ===== -->
+
+    <main>
+      <!-- ===== Blog Single Start ===== -->
+      <section class="pt-31.5 pb-17.5">
+        <div class="max-w-[1030px] mx-auto px-4 sm:px-8 xl:px-0">
+          <div class="max-w-[770px] mx-auto text-center">
+            <a
+              href="category.html"
+              class="inline-flex text-blue bg-blue/[0.08] font-medium text-custom-sm py-1 px-3 rounded-full mb-1"
+              >Technology</a
+            >
+            <h1
+              class="font-bold text-2xl sm:text-4xl lg:text-custom-2 text-dark mb-5"
+            >
+              Start here for a quick overview of everything you need to know
+            </h1>
+            <p class="text-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id
+              quam at justo ullamcorper vulputate. Donec mattis aliquam urna
+            </p>
+
+            <div class="flex items-center justify-center gap-4 mt-7.5">
+              <div class="flex w-12.5 h-12.5 rounded-full overflow-hidden">
+                <img src="./images/user/user-01.png" alt="user" />
+              </div>
+
+              <div class="text-left">
+                <h4 class="font-medium text-custom-lg text-dark mb-1">
+                  Adrio Devid
+                </h4>
+                <div class="flex items-center gap-1.5">
+                  <p>Aug 28, 2025</p>
+                  <span
+                    class="flex w-[3px] h-[3px] rounded-full bg-dark-2"
+                  ></span>
+                  <p>1 min read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./images/blog/blog-single-01.png"
+            alt="blog"
+            class="mt-10 mb-11"
+          />
+
+          <div class="max-w-[770px] mx-auto">
+            <div>
+              <p class="mb-5 text-body">
+                As discussed in the introduction post, one of the best things
+                about Ghost is just how much you can customize to turn your site
+                into something unique. Everything about your layout and design
+                can be changed, so you're not stuck with yet another clone of a
+                social network profile.
+              </p>
+
+              <p class="font-semibold text-dark mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                id quam at justo ullamcorper vulputate. Donec mattis aliquam
+                urna, sed placerat dolor volutpat vel. Maecenas posuere sem
+                purus, quis feugiat.
+              </p>
+
+              <p class="mb-5 text-body">
+                Sed ullamcorper dui at risus viverra, nec cursus leo
+                ullamcorper. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos.
+              </p>
+
+              <p class="mb-5 text-body">
+                Curabitur pretium, libero vitae pharetra rhoncus, tellus urna
+                auctor orci, eu dictum diam diam nec neque. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Fusce congue dui nec dui lobortis maximus. Morbi
+                bibendum, nisi vel cursus.
+              </p>
+
+              <p class="text-body">
+                Adipiscing elit. Nulla id quam at justo ullamcorper vulputate.
+                Donec mattis aliquam urna, sed placerat dolor volutpat vel.
+                Maecenas quis feugiat.
+              </p>
+            </div>
+
+            <div class="mt-12">
+              <h3 class="font-semibold text-heading-6 text-dark mb-6">
+                Quisque rutrum varius lobortis
+              </h3>
+
+              <p class="mb-5 text-body">
+                Sed ullamcorper dui at risus viverra, nec cursus leo
+                ullamcorper. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per
+                <a href="#" class="text-primary underline">inceptos</a>
+                himenaeos.
+              </p>
+
+              <p class="mb-5 text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                id quam at justo ullamcorper vulputate. Donec mattis aliquam
+                urna, sed placerat dolor volutpat vel. Maecenas posuere sem
+                purus, quis feugiat.
+              </p>
+
+              <p class="text-body">
+                As discussed in the introduction post, one of the best things
+                about Ghost is just how much you can customize to turn your site
+                into something unique. Everything about your layout and design
+                can be changed, so you're not stuck with yet another clone of a
+                social network profile.
+              </p>
+
+              <ul class="flex flex-col gap-3.5 mt-7">
+                <li class="flex gap-5 text-body">
+                  <span
+                    class="flex max-w-[6px] w-full h-1.5 rounded-full bg-dark-5 mt-[9px]"
+                  ></span>
+                  <p>
+                    <span class="text-dark font-semibold"
+                      >Introduction post,</span
+                    >
+                    one of the best things about Ghost is just how much you can
+                    netus et malesuada fames ac turpis egestas. Fusce congue dui
+                    nec dui lobortis maximus.
+                  </p>
+                </li>
+
+                <li class="flex gap-5 text-body">
+                  <span
+                    class="flex max-w-[6px] w-full h-1.5 rounded-full bg-dark-5 mt-[9px]"
+                  ></span>
+                  <p>
+                    <span class="text-dark font-semibold">how much</span>
+                    you can netus et malesuada another clone of a social network
+                    profile.
+                  </p>
+                </li>
+
+                <li class="flex gap-5 text-body">
+                  <span
+                    class="flex max-w-[6px] w-full h-1.5 rounded-full bg-dark-5 mt-[9px]"
+                  ></span>
+                  <p>
+                    <span class="text-dark font-semibold">Sed ullamcorper</span>
+                    dui at risus viverra, nec cursus leo ullamcorper. Class
+                    aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos.
+                  </p>
+                </li>
+
+                <li class="flex gap-5 text-body">
+                  <span
+                    class="flex max-w-[6px] w-full h-1.5 rounded-full bg-dark-5 mt-[9px]"
+                  ></span>
+                  <p>
+                    <span class="text-dark font-semibold">Libero vitae</span>
+                    pharetra rhoncus, tellus urna auctor orci, eu dictum diam
+                  </p>
+                </li>
+              </ul>
+
+              <div
+                class="border-l-[3px] border-gray-3 bg-gray py-5 px-8 mt-7.5"
+              >
+                <p class="font-medium italic text-dark">
+                  “Success is not a destination. Success is a decision you make
+                  on a daily, hourly, and even moment-to-moment basis.” —
+                  Nicolas Cole
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <h3 class="font-semibold text-heading-6 text-dark mb-6">
+                One of the best things
+              </h3>
+
+              <p class="mb-5 text-body">
+                Sed ullamcorper dui at risus viverra, nec cursus leo
+                ullamcorper. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per cursus himenaeos.
+              </p>
+
+              <p class="mb-5 text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                id quam at justo ullamcorper vulputate. Donec mattis aliquam
+                urna, sed placerat dolor volutpat vel. Maecenas posuere sem
+                purus, quis feugiat.
+              </p>
+
+              <p class="text-body">
+                As discussed in the introduction post, one of the best things
+                about Ghost is just how much you can customize to turn your site
+                into something unique. Everything about your layout and design
+                can be changed, so you're not stuck with yet another clone of a
+                social network profile.
+              </p>
+
+              <img
+                src="./images/blog/blog-single-04.png"
+                alt="blog"
+                class="my-8"
+              />
+
+              <p class="mb-5 text-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                id quam at justo ullamcorper vulputate. Donec mattis aliquam
+                urna, sed placerat dolor volutpat vel. Maecenas posuere sem
+                purus, quis feugiat.
+              </p>
+
+              <p class="text-body">
+                As discussed in the introduction post, one of the best things
+                about Ghost is just how much you can customize to turn your site
+                into something unique. Everything about your layout and design
+                can be changed, so you're not stuck with yet another clone of a
+                social network profile.
+              </p>
+            </div>
+
+            <!-- Blog Show More BTN -->
+            <button
+              class="flex justify-center font-medium text-dark border border-dark rounded-md py-3 px-7.5 hover:bg-dark hover:text-white ease-in duration-200 mx-auto mt-10"
+            >
+              View all Posts
+            </button>
+
+            <!-- Author Details -->
+            <div class="border-t border-gray-3 pt-10 mt-12.5">
+              <div class="flex flex-col sm:flex-row sm:items-center gap-9">
+                <div
+                  class="max-w-[133px] w-full h-[133px] rounded-full flex items-center justify-center border border-gray-3"
+                >
+                  <a
+                    href="author.html"
+                    class="max-w-[97px] w-full h-[97px] shadow-img rounded-full overflow-hidden"
+                  >
+                    <img src="./images/user/user-01.png" alt="user" />
+                  </a>
+                </div>
+
+                <div>
+                  <h4 class="font-medium text-custom-lg text-dark mb-3">
+                    Adrio Devid
+                  </h4>
+                  <p>
+                    Breakfast procuring no end happiness allowance assurance
+                    frank. Met simplicity nor difficulty unreserved who.
+                  </p>
+                  <a
+                    href="author.html"
+                    class="flex text-custom-sm text-primary mt-4"
+                    >View profile</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Blog Single End ===== -->
+
+      <!-- ====== Newsletter Section Start -->
+      <include src="./partials/newsletter.html" />
+      <!-- ====== Newsletter Section End -->
+    </main>
+    <!-- ===== Footer Start ===== -->
+    <include src="./partials/footer.html" />
+    <!-- ===== Footer End ===== -->
+
+    <!-- Modals start -->
+    <include src="./partials/modal-newsletter.html" />
+    <include src="./partials/modal-search.html" />
+    <!-- Modals end -->
+
+    <!-- ====== Back To Top Start ===== -->
+    <include src="./partials/scrolltop.html" />
+    <!-- ====== Back To Top End ===== -->
+  </body>
+</html>
