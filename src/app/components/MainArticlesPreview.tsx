@@ -1,5 +1,4 @@
 export const MainArticlesPreview = (props: any) => {
-    console.log(props);
     return (
         <section
             id="home"
@@ -22,7 +21,7 @@ export const MainArticlesPreview = (props: any) => {
                         className="max-w-[1170px] w-full flex flex-col lg:flex-row lg:items-center gap-7.5 lg:gap-11 bg-white shadow-1 rounded-xl p-4 lg:p-2.5"
                     >
                         <div className="lg:max-w-[536px] w-full">
-                            <a href="blog-single.html">
+                            <a href={props.blok.destination_link.cached_url}>
                                 <img
                                     className="w-full"
                                     src={props.blok.image.filename}
@@ -33,13 +32,13 @@ export const MainArticlesPreview = (props: any) => {
 
                         <div className="lg:max-w-[540px] w-full">
                             <a
-                                href="category.html"
+                                href={props.blok.destination_link.cached_url}
                                 className="inline-flex text-purple-dark bg-purple/[0.08] font-medium text-sm py-1 px-3 rounded-full mb-4"
                             >{props.blok.tag}</a>
                             <h1
                                 className="font-bold text-custom-4 xl:text-heading-4 text-dark mb-4"
                             >
-                                <a href="blog-single.html">
+                                <a href={props.blok.destination_link.cached_url}>
                                     {props.blok.title}
                                 </a>
                             </h1>
@@ -62,7 +61,7 @@ export const MainArticlesPreview = (props: any) => {
                             </div>
                         </div>
                     </div>
-                    {props.blok.child_articles.map((article: any) => (
+                    {props.blok.child_articles?.map((article: any) => (
 
                         <div key={article._uid}
                             className="lg:max-w-[570px] w-full flex flex-col sm:flex-row sm:items-center gap-6 bg-white shadow-1 rounded-xl p-2.5"
@@ -81,8 +80,7 @@ export const MainArticlesPreview = (props: any) => {
                                 <a
                                     href="category.html"
                                     className="inline-flex text-blue bg-blue/[0.08] font-medium text-sm py-1 px-3 rounded-full mb-4"
-                                >{article.tag}</a
-                                >
+                                >{article.tag}</a>
                                 <h2 className="font-semibold text-custom-lg text-dark mb-3">
                                     <a href="blog-single.html">
                                         {article.title}
