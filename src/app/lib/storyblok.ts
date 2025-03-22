@@ -1,8 +1,7 @@
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 import { Hero } from "../components/Hero";
 import { Page } from "../components/Page";
-import { MainArticlePreview } from "../components/MainArticlePreview";
-import { SmallArticlePreview } from "../components/SmallArticlePreview";
+import { MainArticlesPreview } from "../components/MainArticlesPreview";
 
 export const getStoryblokApi = storyblokInit({
   accessToken: process.env.STORYBLOK_TOKEN,
@@ -10,8 +9,7 @@ export const getStoryblokApi = storyblokInit({
   components: {
     hero: Hero,
     page: Page,
-    main_article_preview: MainArticlePreview,
-    small_article_preview: SmallArticlePreview,
+    main_articles_preview: MainArticlesPreview
   },
   apiOptions: {
     region: 'us',
