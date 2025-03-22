@@ -1,4 +1,5 @@
 export const MainArticlesPreview = (props: any) => {
+    console.log(props);
     return (
         <section
             id="home"
@@ -63,7 +64,7 @@ export const MainArticlesPreview = (props: any) => {
                     </div>
                     {props.blok.child_articles.map((article: any) => (
 
-                        <div
+                        <div key={article._uid}
                             className="lg:max-w-[570px] w-full flex flex-col sm:flex-row sm:items-center gap-6 bg-white shadow-1 rounded-xl p-2.5"
                         >
                             <div className="lg:max-w-[238px] w-full">

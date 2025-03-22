@@ -1,14 +1,16 @@
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 import { Hero } from "../components/Hero";
-import { Page } from "../components/Page";
+import { BlockBasedPage } from "../components/Page";
 import { MainArticlesPreview } from "../components/MainArticlesPreview";
+import BestBookmakersPage from "../melhores-casas-de-apostas/page";
 
 export const getStoryblokApi = storyblokInit({
   accessToken: process.env.STORYBLOK_TOKEN,
   use: [apiPlugin],
   components: {
+    melhores_casas_de_apostas: BestBookmakersPage,
     hero: Hero,
-    page: Page,
+    block_based_page: BlockBasedPage,
     main_articles_preview: MainArticlesPreview
   },
   apiOptions: {
