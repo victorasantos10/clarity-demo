@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const MainArticlesPreview = (props: any) => {
     return (
         <section
@@ -21,13 +23,13 @@ export const MainArticlesPreview = (props: any) => {
                         className="max-w-[1170px] w-full flex flex-col lg:flex-row lg:items-center gap-7.5 lg:gap-11 bg-white shadow-1 rounded-xl p-4 lg:p-2.5"
                     >
                         <div className="lg:max-w-[536px] w-full">
-                            <a href={props.blok.destination_link.cached_url}>
+                            <Link href={props.blok.destination_link.cached_url}>
                                 <img
                                     className="w-full"
                                     src={props.blok.image.filename}
                                     alt={props.blok.image.alt}
                                 />
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="lg:max-w-[540px] w-full">

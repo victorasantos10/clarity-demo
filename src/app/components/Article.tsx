@@ -1,4 +1,7 @@
-export const BestBookmakers = (props: any) => {
+export const Article = (props: any) => {
+    const paragraphs = props.blok?.article_content?.content?.filter((item: any) => item.type == "paragraph");
+
+    console.log(paragraphs[0].content);
     return (
         <section className="pt-31.5 pb-17.5">
             <div className="max-w-[1030px] mx-auto px-4 sm:px-8 xl:px-0">
@@ -6,16 +9,15 @@ export const BestBookmakers = (props: any) => {
                     <a
                         href="category.html"
                         className="inline-flex text-blue bg-blue/[0.08] font-medium text-custom-sm py-1 px-3 rounded-full mb-1"
-                    >Technology</a
+                    >{props.blok.tag}</a
                     >
                     <h1
                         className="font-bold text-2xl sm:text-4xl lg:text-custom-2 text-dark mb-5"
                     >
-                        Start here for a quick overview of everything you need to know
+                        {props.blok.title}
                     </h1>
                     <p className="text-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id
-                        quam at justo ullamcorper vulputate. Donec mattis aliquam urna
+                        {props.blok.quick_description}
                     </p>
 
                     <div className="flex items-center justify-center gap-4 mt-7.5">
@@ -25,26 +27,35 @@ export const BestBookmakers = (props: any) => {
 
                         <div className="text-left">
                             <h4 className="font-medium text-custom-lg text-dark mb-1">
-                                Adrio Devid
+                                {props.blok.author}
                             </h4>
                             <div className="flex items-center gap-1.5">
-                                <p>Aug 28, 2025</p>
+                                <p>{props.blok.date}</p>
                                 <span
                                     className="flex w-[3px] h-[3px] rounded-full bg-dark-2"
                                 ></span>
-                                <p>1 min read</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <img
-                    src="./images/blog/blog-single-01.png"
-                    alt="blog"
+                    src={props.blok.image.filename}
+                    alt={props.blok.image.alt}
                     className="mt-10 mb-11"
                 />
 
                 <div className="max-w-[770px] mx-auto">
+                    {paragraphs.map((item: any) => (
+                        <p key={item._uid} className="mb-5 text-body">
+                            {item.content.map((mark: string) => {
+                                if (mark === "strong") {
+                                    return <strong>{item.text}</strong>
+                                }
+                                return item.text;
+                            })}
+                        </p>
+                    ))}
                     <div>
                         <p className="mb-5 text-body">
                             As discussed in the introduction post, one of the best things
