@@ -52,7 +52,7 @@ export const MainArticlesPreview = (props: any) => {
                                     <div className="flex w-6 h-6 rounded-full overflow-hidden">
                                         <img src="/images/user/dummy.svg" alt="user" />
                                     </div>
-                                    <p className="text-sm">{props.blok.author}</p>
+                                    <p className="text-sm">Por: {props.blok.author}</p>
                                 </a>
 
                                 <span
