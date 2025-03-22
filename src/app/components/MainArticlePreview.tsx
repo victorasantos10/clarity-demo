@@ -1,6 +1,6 @@
 export const MainArticlePreview = (props: any) => {
 
-    <pre>{JSON.stringify(props, null, 2)}</pre>
+    console.log(props);
 
     return (
     <section
@@ -14,7 +14,7 @@ export const MainArticlePreview = (props: any) => {
             <div
                 className="hidden lg:block absolute bottom-0 left-0 rounded-b-[50px] w-full h-full"
             >
-                <img src="/images/hero/hero-bg.svg" alt="hero" />
+                <img src={props.blok.image} alt="hero" />
             </div>
         </div>
 
