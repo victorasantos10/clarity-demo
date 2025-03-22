@@ -22,7 +22,7 @@ export const Article = (props: any) => {
 
                     <div className="flex items-center justify-center gap-4 mt-7.5">
                         <div className="flex w-12.5 h-12.5 rounded-full overflow-hidden">
-                            <img src="./images/user/user-01.png" alt="user" />
+                            <img src="./images/user/dummy.svg" alt="user" />
                         </div>
 
                         <div className="text-left">
@@ -47,7 +47,7 @@ export const Article = (props: any) => {
 
                 <div className="max-w-[770px] mx-auto">
                     {paragraphs.map((paragraph: any, index: number) => (
-                        <p key={`paragraph-${index}`} className="mb-5 text-body">
+                        <p key={`${paragraph.type}-${index}`} className="mb-5 text-body">
                             {paragraph.content.map((item: any, i: number) => (
                                 <Fragment key={`content-${i}`}>
                                     {renderMarkedText(item.text, item.marks)}
@@ -193,11 +193,11 @@ export const Article = (props: any) => {
                     </div> */}
 
                     {/*-- Blog Show More BTN */}
-                    <button
+                    <a href="/"
                         className="flex justify-center font-medium text-dark border border-dark rounded-md py-3 px-7.5 hover:bg-dark hover:text-white ease-in duration-200 mx-auto mt-10"
                     >
                         Voltar para Home
-                    </button>
+                    </a>
 
                     {/*-- Author Details */}
                     <div className="border-t border-gray-3 pt-10 mt-12.5">
@@ -208,17 +208,16 @@ export const Article = (props: any) => {
                                 <span
                                     className="max-w-[97px] w-full h-[97px] shadow-img rounded-full overflow-hidden"
                                 >
-                                    <img src="./images/user/user-01.png" alt="user" />
+                                    <img src="./images/user/dummy.svg" alt="user" />
                                 </span>
                             </div>
 
                             <div>
                                 <h4 className="font-medium text-custom-lg text-dark mb-3">
-                                    Adrio Devid
+                                    {props.blok.author}
                                 </h4>
                                 <p>
-                                    Breakfast procuring no end happiness allowance assurance
-                                    frank. Met simplicity nor difficulty unreserved who.
+                                    Trazendo as melhores notícias do mundo das apostas!
                                 </p>
                             </div>
                         </div>

@@ -80,7 +80,7 @@ const Header = () => {
           <nav>
             <ul className="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
               <li className={`group relative lg:py-6.5 ${stickyMenu ? "lg:py-4" : ""}`}>
-                <a href="#" className="hover:text-dark flex items-center justify-between gap-3">
+                <a href="/" className="hover:text-dark flex items-center justify-between gap-3">
                   Home
                 </a>
               </li>

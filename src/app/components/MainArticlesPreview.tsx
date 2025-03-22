@@ -50,7 +50,7 @@ export const MainArticlesPreview = (props: any) => {
                             <div className="flex items-center gap-2.5 mt-5">
                                 <a href="author.html" className="flex items-center gap-3">
                                     <div className="flex w-6 h-6 rounded-full overflow-hidden">
-                                        <img src="/images/user/user-01.png" alt="user" />
+                                        <img src="/images/user/dummy.svg" alt="user" />
                                     </div>
                                     <p className="text-sm">{props.blok.author}</p>
                                 </a>
