@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Hero } from "./components/Hero";
 import Header from "./components/Header";
-import { Blog } from "./components/Blog";
+import { StoryblokProvider } from "./components/StoryblokProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,18 +25,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Clarity - Tailwind CSS Template for Blog</title>
-      </head>
-      <body>
-        <Header></Header>
-        <Hero></Hero>
-        {/* <Blog></Blog> */}
-      </body>
-    </html>
+    <StoryblokProvider>
+      <html lang="en">
+        <head>
+          <meta charSet="UTF-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Clarity - Tailwind CSS Template for Blog</title>
+        </head>
+        <body>
+          <Header />
+          {children}
+        </body>
+      </html>
+    </StoryblokProvider>
   );
 }
