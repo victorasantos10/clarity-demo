@@ -1,0 +1,58 @@
+{
+    "consentModal": {
+        "title": "Preferências de Cookies",
+        "description": "Clicando em \"Aceitar todos\", você concorda com o armazenamento de cookies no seu dispositivo para melhorar a navegação no site, analisar o uso do site e ajudar em nossos esforços de marketing.",
+        "acceptAllBtn": "Aceitar todos",
+        "acceptNecessaryBtn": "Rejeitar todos",
+        "showPreferencesBtn": "Gerenciar preferências"
+    },
+    "preferencesModal": {
+        "title": "Preferências de Cookies",
+        "acceptAllBtn": "Aceitar todos",
+        "acceptNecessaryBtn": "Rejeitar todos",
+        "savePreferencesBtn": "Salvar preferências",
+        "closeIconLabel": "Fechar",
+        "sections": [
+            {
+                "title": "Uso de cookies",
+                "description": "Usamos cookies para garantir as funcionalidades básicas do site e melhorar sua experiência online ..."
+            },
+            {
+                "title": "Cookies estritamente necessários",
+                "description": "Estes cookies são essenciais para o funcionamento adequado do meu site. Sem esses cookies, o site não funcionaria corretamente",
+                "linkedCategory": "necessary"
+            },
+            {
+                "title": "Cookies de desempenho e análise",
+                "description": "Esses cookies permitem que o site lembre das escolhas que você fez anteriormente",
+                "linkedCategory": "analytics",
+                "cookieTable": {
+                    "headers": {
+                        "name": "Nome",
+                        "domain": "Serviço",
+                        "description": "Descrição",
+                        "expiration": "Expiração"
+                    },
+                    "body": [
+                        {
+                            "name": "_ga",
+                            "domain": "Google Analytics",
+                            "description": "Cookie definido pelo <a href=\"#das\">Google Analytics</a>.",
+                            "expiration": "Expira após 12 dias"
+                        },
+                        {
+                            "name": "_gid",
+                            "domain": "Google Analytics",
+                            "description": "Cookie definido pelo <a href=\"#das\">Google Analytics</a>",
+                            "expiration": "Sessão"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Mais informações",
+                "description": "Para quaisquer dúvidas em relação à nossa política de cookies e suas escolhas, por favor <a class=\"cc-link\" href=\"#yourdomain.com\">entre em contato conosco</a>."
+            }
+        ]
+    }
+}

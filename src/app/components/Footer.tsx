@@ -6,7 +6,7 @@ export const Footer = (props: any) => {
                     className="flex flex-wrap items-center justify-center flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between"
                 >
                     <div>
-                        <p className="text-custom-sm">&copy; 2025 Bet4Fun.</p>
+                        <p className="text-custom-sm">&copy; {new Date().getFullYear()} Bet4Fun.</p>
                         <p className="text-custom-sm">Todos os direitos reservados</p>
                     </div>
 
