@@ -90,7 +90,7 @@ const StarRating = ({ rating }: any) => {
 
   return (
     <div className="flex items-center space-x-1 bg-yellow-300">
-      <p className="pr-2 pt-1">{rating} of 5</p>
+      <p className="pr-2 pt-1">{rating} de 5</p>
       {stars.map((type, idx) => (
         <Star key={idx} filled={type} index={idx} />
       ))}

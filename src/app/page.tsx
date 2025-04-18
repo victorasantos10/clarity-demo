@@ -8,18 +8,21 @@ const bettingData = [
     name: 'Superbet',
     rank: 1,
     rating: 4.8,
+    promo: "Aposta grátis toda semana!",
     imageSrc: './images/bet-brands/superbet.svg',
   },
   {
     name: 'BetMGM',
     rank: 3,
     rating: 4.6,
+    promo: "Aposte e ganhe bônus!",
     imageSrc: './images/bet-brands/betmgm.svg',
   },
   {
     name: 'SportingBet',
     rank: 4,
     rating: 4.5,
+    promo: "Bonus de 100% no primeiro depósito",
     imageSrc: './images/bet-brands/sportingbet.svg',
   },
   // {
@@ -52,10 +55,12 @@ const HomePage = async (props: any) => {
             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
         </div>                 */}
       </div>
+      <h1 className="mt-10 text-center text-4xl font-extrabold mx-auto">Artigos</h1>
+
       <StoryblokStory story={story}></StoryblokStory>
 
       <section className="py-10">
-        <BettingCardList></BettingCardList>
+        <BettingCardList bettingData={bettingData}></BettingCardList>
       </section>
 
       <section className="pb-15">
@@ -111,17 +116,17 @@ const HomePage = async (props: any) => {
                           {val.name}
                         </h3>
                         <StarRating rating={val.rating}></StarRating>
-                        <span
+                        <div
                           className="flex items-center gap-2 text-custom-sm mt-2.5"
                         >
 
                           <button
                             type="submit"
-                            className="rounded-md text-white font-medium inline-flex justify-center py-1.5 px-2 bg-primary hover:opacity-90 lg:transition-all lg:ease-linear lg:duration-300"
+                            className="rounded-md cp text-white font-medium inline-flex justify-center py-1.5 px-2 bg-primary hover:opacity-90 lg:transition-all lg:ease-linear lg:duration-300"
                           >
                             Cadastre-se
                           </button>
-                        </span>
+                        </div>
 
                       </div>
                     </div>

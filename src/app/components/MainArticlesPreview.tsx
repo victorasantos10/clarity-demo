@@ -4,7 +4,7 @@ export const MainArticlesPreview = (props: any) => {
     return (
         <section
             id="home"
-            className="rounded-b-[50px] relative overflow-hidden z-10 pb-15 pt-34"
+            className="rounded-b-[50px] relative overflow-hidden z-10 pb-15 pt-10"
         >
             <div>
                 <div
