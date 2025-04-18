@@ -2,36 +2,7 @@ import { StoryblokStory } from "@storyblok/react/rsc";
 import { fetchStoryblokStory } from "./api/storyblok-client";
 import BettingCardList from "./components/BettingCardList";
 import StarRating from "./components/StarRating";
-
-const bettingData = [
-  {
-    name: 'Superbet',
-    rank: 1,
-    rating: 4.8,
-    promo: "Aposta grátis toda semana!",
-    imageSrc: './images/bet-brands/superbet.svg',
-  },
-  {
-    name: 'BetMGM',
-    rank: 3,
-    rating: 4.6,
-    promo: "Aposte e ganhe bônus!",
-    imageSrc: './images/bet-brands/betmgm.svg',
-  },
-  {
-    name: 'SportingBet',
-    rank: 4,
-    rating: 4.5,
-    promo: "Bonus de 100% no primeiro depósito",
-    imageSrc: './images/bet-brands/sportingbet.svg',
-  },
-  // {
-  //   name: 'Novibet',
-  //   rank: 5,
-  //   rating: 4.4,
-  //   imageSrc: './images/bet-brands/novibet.svg',
-  // },
-]
+import { bettingData } from "./data/bettingData";
 
 const HomePage = async (props: any) => {
   const BASE_PATH = "home";
@@ -58,10 +29,6 @@ const HomePage = async (props: any) => {
       <h1 className="mt-10 text-center text-4xl font-extrabold mx-auto">Artigos</h1>
 
       <StoryblokStory story={story}></StoryblokStory>
-
-      <section className="py-10">
-        <BettingCardList bettingData={bettingData}></BettingCardList>
-      </section>
 
       <section className="pb-15">
         <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
